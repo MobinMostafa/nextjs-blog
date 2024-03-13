@@ -4,8 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 // import heroImage from '/hero.jfif'
 import { Fade, Zoom } from "react-reveal";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter()
+  const handleRouter = () => {
+    router.push("/contact")
+  }
   return (
     <div className="container">
       <div className="row py-5 ">
@@ -20,7 +25,7 @@ const Hero = () => {
             <Link href="/about">
               <Button className="primaryColor">Read More</Button>
             </Link>
-            <Button variant="outline-success" className="ms-2">
+            <Button variant="outline-success" className="ms-2" onClick={() => handleRouter() }>
               Contact
             </Button>
           </div>

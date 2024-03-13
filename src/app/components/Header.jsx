@@ -26,6 +26,11 @@ const Header = () => {
           id:4,
           name: 'Blog',
           href: '/blog',
+      },
+      {
+        id:5,
+        name: 'All Products',
+        href: '/products'
       }
     ]
   return (
